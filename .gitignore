@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+*.sqlite
+src/static/estoque_pinceis_frontend/node_modules/
+
+
