@@ -173,8 +173,8 @@ const StockManagement = ({ userEmail, onLogout }) => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
-                <Paintbrush className="w-6 h-6 text-blue-600" />
-                <h1 className="text-xl font-bold text-gray-900">Gestão de Estoque</h1>
+                <img src="/chropi-icon.png" alt="CHROPI Logo" className="w-6 h-6" />
+                <h1 className="text-xl font-bold text-gray-900">CHROPI - Gestão de Estoque</h1>
               </div>
             </div>
             

@@ -56,14 +56,14 @@ const LoginForm = ({ onLogin }) => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
       <Card className="w-full max-w-md shadow-xl">
         <CardHeader className="text-center space-y-4">
-          <div className="mx-auto w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
-            <Paintbrush className="w-8 h-8 text-white" />
+          <div className="mx-auto w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg">
+            <img src="/chropi-icon.png" alt="CHROPI Logo" className="w-12 h-12" />
           </div>
           <CardTitle className="text-2xl font-bold text-gray-900">
-            Controle de Estoque
+            CHROPI
           </CardTitle>
           <CardDescription className="text-gray-600">
-            Sistema de gerenciamento de pincéis
+            Sistema de controle de estoque de pincéis
           </CardDescription>
         </CardHeader>
         
@@ -122,7 +122,7 @@ const LoginForm = ({ onLogin }) => {
           </form>
           
           <div className="mt-6 text-center text-sm text-gray-500">
-            <p>Use qualquer email e senha para acessar o sistema</p>
+            <p>Use qualquer email e a senha: <strong>G7#p2@kq</strong></p>
           </div>
         </CardContent>
       </Card>

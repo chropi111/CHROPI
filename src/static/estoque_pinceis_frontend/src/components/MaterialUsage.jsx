@@ -79,8 +79,8 @@ const MaterialUsage = ({ userEmail, onLogout }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <Paintbrush className="h-8 w-8 text-blue-600" />
-              <h1 className="text-xl font-bold text-gray-900">Controle de Uso</h1>
+              <img src="/chropi-icon.png" alt="CHROPI Logo" className="h-8 w-8" />
+              <h1 className="text-xl font-bold text-gray-900">CHROPI - Controle de Uso</h1>
             </div>
             
             <div className="flex items-center space-x-4">

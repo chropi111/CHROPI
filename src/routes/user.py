@@ -12,13 +12,18 @@ def login():
     if not email or not password:
         return jsonify({'error': 'Email e senha são obrigatórios'}), 400
     
-    # Para demonstração, aceita qualquer email/senha
-    # Em produção, verificaria no banco de dados
+    # Senha fixa para todos os usuários
+    SENHA_FIXA = "G7#p2@kq"
+    
+    if password != SENHA_FIXA:
+        return jsonify({'error': 'Senha incorreta. Use a senha padrão do sistema.'}), 401
+    
+    # Se a senha estiver correta, busca ou cria o usuário
     user = User.query.filter_by(email=email).first()
     if not user:
-        # Cria usuário temporário para demonstração
+        # Cria usuário se não existir
         user = User(username=email.split('@')[0], email=email, role='user')
-        user.set_password(password)
+        user.set_password(SENHA_FIXA)
         db.session.add(user)
         db.session.commit()
     
